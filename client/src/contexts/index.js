@@ -4,5 +4,6 @@
  */
 
 import ClosableContext from './ClosableContext';
+import { ThemeProvider, useTheme } from './ThemeContext';
 
-export { ClosableContext }; // eslint-disable-line import/prefer-default-export
+export { ClosableContext, ThemeProvider, useTheme }; // eslint-disable-line import/prefer-default-export

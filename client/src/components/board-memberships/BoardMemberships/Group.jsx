@@ -14,6 +14,7 @@ import ActionsStep from './ActionsStep';
 import UserAvatar from '../../users/UserAvatar';
 
 import styles from './Group.module.scss';
+import { useTheme } from '../../../contexts';
 
 const MAX_MEMBERS = 6;
 
@@ -24,6 +25,9 @@ const Group = React.memo(({ items, role, groupsTotal }) => {
   let visibleTotal = MAX_MEMBERS - groupsTotal;
   let hiddenTotal = items.length - visibleTotal;
 
+  const { theme } = useTheme();
+  const menuItemStyle = { color: theme === 'dark' ? '#fff' : '#22252a' };
+
   if (hiddenTotal === 1) {
     visibleTotal += 1;
     hiddenTotal -= 1;
@@ -31,7 +35,7 @@ const Group = React.memo(({ items, role, groupsTotal }) => {
 
   return (
     <div className={styles.wrapper}>
-      <Icon name={BoardMembershipRoleIcons[role]} className={styles.icon} />
+      <Icon name={BoardMembershipRoleIcons[role]} className={styles.icon} style={menuItemStyle} />
       {items.slice(0, visibleTotal).map((item) => (
         <span key={item.id} className={styles.user}>
           <ActionsPopup boardMembershipId={item.id}>

@@ -11,6 +11,7 @@ import { ThemeProvider, ToasterProvider } from '@gravity-ui/uikit';
 // eslint-disable-next-line import/no-unresolved
 import { toaster } from '@gravity-ui/uikit/toaster-singleton';
 import { ReduxRouter } from '../../lib/redux-router';
+import { ThemeProvider as CustomThemeProvider } from '../../contexts';
 
 import Paths from '../../constants/Paths';
 import Login from './Login';
@@ -28,19 +29,21 @@ function Root({ store, history }) {
   return (
     <Provider store={store}>
       <ReduxRouter history={history}>
-        <ThemeProvider theme="light">
-          <ToasterProvider toaster={toaster}>
-            <Routes>
-              <Route path={Paths.LOGIN} element={<Login />} />
-              <Route path={Paths.OIDC_CALLBACK} element={<Login />} />
-              <Route path={Paths.ROOT} element={<Core />} />
-              <Route path={Paths.PROJECTS} element={<Core />} />
-              <Route path={Paths.BOARDS} element={<Core />} />
-              <Route path={Paths.CARDS} element={<Core />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </ToasterProvider>
-        </ThemeProvider>
+        <CustomThemeProvider>
+          <ThemeProvider theme="light">
+            <ToasterProvider toaster={toaster}>
+              <Routes>
+                <Route path={Paths.LOGIN} element={<Login />} />
+                <Route path={Paths.OIDC_CALLBACK} element={<Login />} />
+                <Route path={Paths.ROOT} element={<Core />} />
+                <Route path={Paths.PROJECTS} element={<Core />} />
+                <Route path={Paths.BOARDS} element={<Core />} />
+                <Route path={Paths.CARDS} element={<Core />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </ToasterProvider>
+          </ThemeProvider>
+        </CustomThemeProvider>
       </ReduxRouter>
     </Provider>
   );

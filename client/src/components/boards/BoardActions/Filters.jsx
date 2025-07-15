@@ -22,12 +22,16 @@ import LabelChip from '../../labels/LabelChip';
 import LabelsStep from '../../labels/LabelsStep';
 
 import styles from './Filters.module.scss';
+import { useTheme } from '../../../contexts';
 
 const Filters = React.memo(() => {
   const board = useSelector(selectors.selectCurrentBoard);
   const userIds = useSelector(selectors.selectFilterUserIdsForCurrentBoard);
   const labelIds = useSelector(selectors.selectFilterLabelIdsForCurrentBoard);
   const currentUserId = useSelector(selectors.selectCurrentUserId);
+
+  const { theme } = useTheme();
+  const menuItemStyle = { color: theme === 'dark' ? '#fff' : '#22252a' };
 
   const withCurrentUserSelector = useSelector(
     (state) => !!selectors.selectCurrentUserMembershipForCurrentBoard(state),
@@ -157,7 +161,10 @@ const Filters = React.memo(() => {
           onUserDeselect={handleUserDeselect}
         >
           <button type="button" className={styles.filterButton}>
-            <span className={styles.filterTitle}>{`${t('common.members')}:`}</span>
+            <span
+              className={styles.filterTitle}
+              style={menuItemStyle}
+            >{`${t('common.members')}:`}</span>
             {userIds.length === 0 && <span className={styles.filterLabel}>{t('common.all')}</span>}
           </button>
         </BoardMembershipsPopup>
@@ -182,7 +189,10 @@ const Filters = React.memo(() => {
           onDeselect={handleLabelDeselect}
         >
           <button type="button" className={styles.filterButton}>
-            <span className={styles.filterTitle}>{`${t('common.labels')}:`}</span>
+            <span
+              className={styles.filterTitle}
+              style={menuItemStyle}
+            >{`${t('common.labels')}:`}</span>
             {labelIds.length === 0 && <span className={styles.filterLabel}>{t('common.all')}</span>}
           </button>
         </LabelsPopup>

@@ -7,7 +7,7 @@
   .editButton {
     background: transparent;
     box-shadow: none;
-    color: #fff;
+    color: var(--color-text);
     font-size: 15px;
     line-height: 34px;
     margin-left: 8px;
@@ -16,7 +16,7 @@
     width: 34px;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(0, 0, 0, 0.08);
     }
   }
 
@@ -31,7 +31,7 @@
     &:active,
     &:hover {
       background: transparent;
-      color: rgba(255, 255, 255, 0.9);
+      color: var(--color-text);
 
       .editButton {
         opacity: 1;
@@ -41,7 +41,7 @@
 
   .itemHoverable:hover {
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.32);
+    background: rgba(0, 0, 0, 0.08);
   }
 
   .itemIconEnabled {
@@ -49,7 +49,7 @@
   }
 
   .logo {
-    color: #fff;
+    color: var(--color-text);
     flex: 0 0 auto;
     letter-spacing: 3.5px;
     line-height: 50px;
@@ -62,11 +62,11 @@
   }
 
   .menu {
-    background: transparent;
+    background: var(--color-bg-secondary);
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: #fff;
+    color: var(--color-text);
     flex: 1 1 auto;
     height: 50px;
     margin: 0;
@@ -74,9 +74,9 @@
   }
 
   .notification {
-    background: #eb5a46;
+    background: var(--color-notification);
     border-radius: 8px;
-    color: #fff;
+    color: var(--color-text-inverse);
     display: inline-block;
     font-size: 14px;
     font-weight: bold;
@@ -92,6 +92,7 @@
   .title {
     font-size: 20px;
     font-weight: bold;
+    color: var(--color-text);
   }
 
   .userName {
@@ -103,8 +104,65 @@
   }
 
   .wrapper {
-    background: rgba(0, 0, 0, 0.24);
+    background: var(--color-bg-secondary);
     display: flex;
     flex: 0 0 auto;
+  }
+}
+
+:global([data-theme="light"]) #app {
+  .logo,
+  .title,
+  .menu,
+  .item,
+  .itemHoverable,
+  .editButton,
+  .userName {
+    color: #22252a !important;
+  }
+  .itemIconEnabled {
+    color: #8bc34a !important;
+  }
+  .item,
+  .itemHoverable {
+    color: #22252a !important;
+  }
+  .item:active,
+  .item:focus,
+  .item:hover,
+  .itemHoverable:active,
+  .itemHoverable:focus,
+  .itemHoverable:hover {
+    color: #22252a !important;
+  }
+  .item :global(.icon),
+  .itemHoverable :global(.icon) {
+    color: #22252a !important;
+  }
+  .item:active :global(.icon),
+  .item:focus :global(.icon),
+  .item:hover :global(.icon),
+  .itemHoverable:active :global(.icon),
+  .itemHoverable:focus :global(.icon),
+  .itemHoverable:hover :global(.icon) {
+    color: #22252a !important;
+  }
+}
+:global([data-theme="dark"]) #app {
+  .logo,
+  .title,
+  .menu,
+  .item,
+  .itemHoverable,
+  .editButton,
+  .userName {
+    color: #fff !important;
+  }
+  .itemIconEnabled {
+    color: #bdff22 !important;
+  }
+  .item :global(.icon),
+  .itemHoverable :global(.icon) {
+    color: #fff !important;
   }
 }

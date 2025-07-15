@@ -21,7 +21,8 @@
       &__suggestions {
         border: 1px solid #d4d4d5;
         border-radius: 3px;
-        box-shadow: 0 8px 16px -4px rgba(9, 45, 66, 0.25),
+        box-shadow:
+          0 8px 16px -4px rgba(9, 45, 66, 0.25),
           0 0 0 1px rgba(9, 45, 66, 0.08);
         max-height: 200px;
         overflow-y: auto;
@@ -162,8 +163,10 @@
   }
 
   .g-root {
-    --g-font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
-    --g-font-family-sans: "Nunitoga", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    --g-font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo,
+      Consolas, Liberation Mono, monospace !important;
+    --g-font-family-sans: "Nunitoga", "Helvetica Neue", Arial, Helvetica,
+      sans-serif !important;
 
     .g-md-settings-content__separator,
     .g-md-settings-content__toolbar,
@@ -174,8 +177,10 @@
 
   .yfm {
     --yfm-color-text-private: #17394d !important;
-    --yfm-font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace !important;
-    --yfm-font-family-sans: "Nunitoga", "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+    --yfm-font-family-monospace: ui-monospace, SFMono-Regular, SF Mono, Menlo,
+      Consolas, Liberation Mono, monospace !important;
+    --yfm-font-family-sans: "Nunitoga", "Helvetica Neue", Arial, Helvetica,
+      sans-serif !important;
 
     font-size: 1em !important;
 
@@ -210,11 +215,11 @@
     }
 
     h5 {
-      font-size: .875em !important;
+      font-size: 0.875em !important;
     }
 
     h6 {
-      font-size: .85em !important;
+      font-size: 0.85em !important;
     }
 
     .mention {
@@ -239,15 +244,15 @@
   .hljs {
     display: block;
     overflow-x: auto;
-    padding: .5em;
+    padding: 0.5em;
     color: #333;
-    background: #f8f8f8
+    background: #f8f8f8;
   }
 
   .hljs-comment,
   .hljs-quote {
     color: #998;
-    font-style: italic
+    font-style: italic;
   }
 
   .hljs-keyword,
@@ -262,12 +267,12 @@
   .hljs-tag .hljs-attr,
   .hljs-template-variable,
   .hljs-variable {
-    color: teal
+    color: teal;
   }
 
   .hljs-doctag,
   .hljs-string {
-    color: #d14
+    color: #d14;
   }
 
   .hljs-section,
@@ -278,7 +283,7 @@
   }
 
   .hljs-subst {
-    font-weight: normal
+    font-weight: normal;
   }
 
   .hljs-class .hljs-title,
@@ -291,22 +296,22 @@
   .hljs-name,
   .hljs-tag {
     color: navy;
-    font-weight: normal
+    font-weight: normal;
   }
 
   .hljs-link,
   .hljs-regexp {
-    color: #009926
+    color: #009926;
   }
 
   .hljs-bullet,
   .hljs-symbol {
-    color: #990073
+    color: #990073;
   }
 
   .hljs-built_in,
   .hljs-builtin-name {
-    color: #0086b3
+    color: #0086b3;
   }
 
   .hljs-meta {
@@ -315,15 +320,15 @@
   }
 
   .hljs-deletion {
-    background: #fdd
+    background: #fdd;
   }
 
   .hljs-addition {
-    background: #dfd
+    background: #dfd;
   }
 
   .hljs-emphasis {
-    font-style: italic
+    font-style: italic;
   }
 
   .hljs-strong {
@@ -443,7 +448,14 @@
   }
 
   .backgroundSilverGlint {
-    background: linear-gradient(160deg, #adadad, #92908d, #e2e2e2, #928e8e, #726f6e) !important;
+    background: linear-gradient(
+      160deg,
+      #adadad,
+      #92908d,
+      #e2e2e2,
+      #928e8e,
+      #726f6e
+    ) !important;
   }
 
   .backgroundBrightMoss {
@@ -535,7 +547,14 @@
   }
 
   .backgroundPirateGold {
-    background: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07) !important;
+    background: linear-gradient(
+      160deg,
+      #a54e07,
+      #b47e11,
+      #fef1a2,
+      #bc881b,
+      #a54e07
+    ) !important;
   }
 
   .backgroundOceanDive {
@@ -555,39 +574,84 @@
   }
 
   .backgroundBlueDanube {
-    background: radial-gradient(circle, rgba(9, 9, 121, 1) 0%, rgba(2, 0, 36, 1) 0%, rgba(2, 29, 66, 1) 0%, rgba(2, 41, 78, 1) 0%, rgba(2, 57, 95, 1) 0%, rgba(1, 105, 144, 1) 100%, rgba(1, 151, 192, 1) 100%, rgba(0, 212, 255, 1) 100%) !important;
+    background: radial-gradient(
+      circle,
+      rgba(9, 9, 121, 1) 0%,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(2, 29, 66, 1) 0%,
+      rgba(2, 41, 78, 1) 0%,
+      rgba(2, 57, 95, 1) 0%,
+      rgba(1, 105, 144, 1) 100%,
+      rgba(1, 151, 192, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    ) !important;
   }
 
   .backgroundSundownStripe {
-    background: linear-gradient(22deg, rgba(31, 30, 30, 1) 0%, rgba(255, 128, 0, 1) 10%, rgba(255, 128, 0, 1) 41%, rgba(0, 0, 0, 1) 41%, rgba(0, 102, 204, 1) 89%) !important;
+    background: linear-gradient(
+      22deg,
+      rgba(31, 30, 30, 1) 0%,
+      rgba(255, 128, 0, 1) 10%,
+      rgba(255, 128, 0, 1) 41%,
+      rgba(0, 0, 0, 1) 41%,
+      rgba(0, 102, 204, 1) 89%
+    ) !important;
   }
 
   .backgroundMagicalDawn {
-    background: radial-gradient(circle, rgba(0, 107, 141, 1) 0%, rgba(0, 69, 91, 1) 90%) !important;
+    background: radial-gradient(
+      circle,
+      rgba(0, 107, 141, 1) 0%,
+      rgba(0, 69, 91, 1) 90%
+    ) !important;
   }
 
   .backgroundStrawberryDust {
-    background: linear-gradient(180deg, rgba(172, 79, 115, 1) 0%, rgba(254, 158, 150, 1) 66%) !important;
+    background: linear-gradient(
+      180deg,
+      rgba(172, 79, 115, 1) 0%,
+      rgba(254, 158, 150, 1) 66%
+    ) !important;
   }
 
   .backgroundPurpleRose {
-    background: linear-gradient(128deg, rgba(116, 43, 62, 1) 19%, rgba(192, 71, 103, 1) 90%) !important;
+    background: linear-gradient(
+      128deg,
+      rgba(116, 43, 62, 1) 19%,
+      rgba(192, 71, 103, 1) 90%
+    ) !important;
   }
 
   .backgroundSunScream {
-    background: linear-gradient(112deg, rgba(251, 221, 19, 1) 19%, rgba(255, 153, 1, 1) 62%) !important;
+    background: linear-gradient(
+      112deg,
+      rgba(251, 221, 19, 1) 19%,
+      rgba(255, 153, 1, 1) 62%
+    ) !important;
   }
 
   .backgroundWarmRust {
-    background: linear-gradient(141deg, rgba(255, 90, 8, 1) 0%, rgba(88, 0, 0, 1) 96%) !important;
+    background: linear-gradient(
+      141deg,
+      rgba(255, 90, 8, 1) 0%,
+      rgba(88, 0, 0, 1) 96%
+    ) !important;
   }
 
   .backgroundSkyChange {
-    background: linear-gradient(135deg, rgba(0, 52, 89, 1) 0%, rgba(0, 168, 232, 1) 90%) !important;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 52, 89, 1) 0%,
+      rgba(0, 168, 232, 1) 90%
+    ) !important;
   }
 
   .backgroundGreenEyes {
-    background: linear-gradient(138deg, rgba(19, 170, 82, 1) 0%, rgba(0, 102, 43, 1) 90%) !important;
+    background: linear-gradient(
+      138deg,
+      rgba(19, 170, 82, 1) 0%,
+      rgba(0, 102, 43, 1) 90%
+    ) !important;
   }
 
   .backgroundBlueXchange {
@@ -615,15 +679,28 @@
   }
 
   .backgroundAlgaeGreen {
-    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 95, 104, 1) 0%, rgba(15, 156, 168, 1) 90%) !important;
+    background: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(0, 95, 104, 1) 0%,
+      rgba(15, 156, 168, 1) 90%
+    ) !important;
   }
 
   .backgroundCoralReef {
-    background: linear-gradient(110.3deg, rgba(238, 179, 123, 1) 8.7%, rgba(216, 103, 77, 1) 47.5%, rgba(114, 43, 54, 1) 89.1%) !important;
+    background: linear-gradient(
+      110.3deg,
+      rgba(238, 179, 123, 1) 8.7%,
+      rgba(216, 103, 77, 1) 47.5%,
+      rgba(114, 43, 54, 1) 89.1%
+    ) !important;
   }
 
   .backgroundSteelGrey {
-    background: radial-gradient(circle farthest-corner at -4% -12.9%, rgba(74, 98, 110, 1) 0.3%, rgba(30, 33, 48, 1) 90.2%) !important;
+    background: radial-gradient(
+      circle farthest-corner at -4% -12.9%,
+      rgba(74, 98, 110, 1) 0.3%,
+      rgba(30, 33, 48, 1) 90.2%
+    ) !important;
   }
 
   .backgroundHeatWaves {
@@ -631,19 +708,35 @@
   }
 
   .backgroundWowBlue {
-    background: linear-gradient(111.8deg, rgba(0, 104, 155, 1) 19.8%, rgba(0, 173, 239, 1) 92.1%) !important;
+    background: linear-gradient(
+      111.8deg,
+      rgba(0, 104, 155, 1) 19.8%,
+      rgba(0, 173, 239, 1) 92.1%
+    ) !important;
   }
 
   .backgroundVelvetLounge {
-    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(151, 10, 130, 1) 0%, rgba(33, 33, 33, 1) 100.2%) !important;
+    background: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(151, 10, 130, 1) 0%,
+      rgba(33, 33, 33, 1) 100.2%
+    ) !important;
   }
 
   .backgroundLagoon {
-    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 107, 141, 1) 0%, rgba(0, 69, 91, 1) 90%) !important;
+    background: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(0, 107, 141, 1) 0%,
+      rgba(0, 69, 91, 1) 90%
+    ) !important;
   }
 
   .backgroundPurpleRain {
-    background: linear-gradient(91.7deg, rgba(50, 25, 79, 1) -4.3%, rgba(122, 101, 149, 1) 101.8%) !important;
+    background: linear-gradient(
+      91.7deg,
+      rgba(50, 25, 79, 1) -4.3%,
+      rgba(122, 101, 149, 1) 101.8%
+    ) !important;
   }
 
   .backgroundBlueSteel {
@@ -651,23 +744,50 @@
   }
 
   .backgroundBlueishCurve {
-    background: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%) !important;
+    background: linear-gradient(
+      171.8deg,
+      rgba(5, 111, 146, 1) 13.5%,
+      rgba(6, 57, 84, 1) 78.6%
+    ) !important;
   }
 
   .backgroundPrismLight {
-    background: linear-gradient(111.7deg, rgba(251, 198, 6, 1) 2.4%, rgba(224, 82, 95, 1) 28.3%, rgba(194, 78, 154, 1) 46.2%, rgba(32, 173, 190, 1) 79.4%, rgba(22, 158, 95, 1) 100.2%) !important;
+    background: linear-gradient(
+      111.7deg,
+      rgba(251, 198, 6, 1) 2.4%,
+      rgba(224, 82, 95, 1) 28.3%,
+      rgba(194, 78, 154, 1) 46.2%,
+      rgba(32, 173, 190, 1) 79.4%,
+      rgba(22, 158, 95, 1) 100.2%
+    ) !important;
   }
 
   .backgroundTheBow {
-    background: radial-gradient(circle farthest-corner at -8.9% 51.2%, rgba(255, 124, 0, 1) 0%, rgba(255, 124, 0, 1) 15.9%, rgba(255, 163, 77, 1) 15.9%, rgba(255, 163, 77, 1) 24.4%, rgba(19, 30, 37, 1) 24.5%, rgba(19, 30, 37, 1) 66%) !important;
+    background: radial-gradient(
+      circle farthest-corner at -8.9% 51.2%,
+      rgba(255, 124, 0, 1) 0%,
+      rgba(255, 124, 0, 1) 15.9%,
+      rgba(255, 163, 77, 1) 15.9%,
+      rgba(255, 163, 77, 1) 24.4%,
+      rgba(19, 30, 37, 1) 24.5%,
+      rgba(19, 30, 37, 1) 66%
+    ) !important;
   }
 
   .backgroundGreenMist {
-    background: linear-gradient(180.5deg, rgba(0, 128, 128, 1) 8.5%, rgba(174, 206, 100, 1) 118.2%) !important;
+    background: linear-gradient(
+      180.5deg,
+      rgba(0, 128, 128, 1) 8.5%,
+      rgba(174, 206, 100, 1) 118.2%
+    ) !important;
   }
 
   .backgroundRedCurtain {
-    background: radial-gradient(circle 371px at 2.9% 14.3%, rgba(255, 0, 102, 1) 0%, rgba(80, 5, 35, 1) 100.7%) !important;
+    background: radial-gradient(
+      circle 371px at 2.9% 14.3%,
+      rgba(255, 0, 102, 1) 0%,
+      rgba(80, 5, 35, 1) 100.7%
+    ) !important;
   }
 
   /* Colors */
@@ -711,4 +831,76 @@
   .colorTurquoiseSea {
     color: #00858a !important;
   }
+}
+
+[data-theme="light"] {
+  --color-bg: #f5f6f7;
+  --color-bg-secondary: #fff;
+  --color-bg-tertiary: #ebeef0;
+  --color-text: #22252a;
+  --color-text-secondary: #444;
+  --color-text-inverse: #fff;
+  --color-link: #2185d0;
+  --color-link-hover: #1678c2;
+  --color-border: #d4d4d5;
+  --color-shadow: rgba(9, 45, 66, 0.08);
+  --color-notification: #eb5a46;
+}
+[data-theme="dark"] {
+  --color-bg: #22252a;
+  --color-bg-secondary: #2d3138;
+  --color-bg-tertiary: #23262b;
+  --color-text: #f5f6f7;
+  --color-text-secondary: #cfd2da;
+  --color-text-inverse: #22252a;
+  --color-link: #54c8ff;
+  --color-link-hover: #3ac0ff;
+  --color-border: #444950;
+  --color-shadow: rgba(0, 0, 0, 0.32);
+  --color-notification: #eb5a46;
+}
+body,
+#app {
+  background: var(--color-bg) !important;
+  color: var(--color-text) !important;
+}
+a {
+  color: var(--color-link);
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+.ui.menu,
+.ui.inverted.menu,
+.ui.segment,
+.ui.inverted.segment {
+  background: var(--color-bg-secondary) !important;
+  color: var(--color-text) !important;
+}
+.ui.header,
+.ui.inverted.header {
+  color: var(--color-text) !important;
+}
+.ui.button,
+.ui.inverted.button {
+  background: var(--color-bg-tertiary) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+}
+.ui.button.primary,
+.ui.inverted.button.primary {
+  background: var(--color-link) !important;
+  color: var(--color-text-inverse) !important;
+}
+.ui.input > input,
+.ui.form input {
+  background: var(--color-bg-secondary) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+}
+.ui.message,
+.ui.inverted.message {
+  background: var(--color-bg-tertiary) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
 }

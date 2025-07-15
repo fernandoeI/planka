@@ -40,7 +40,9 @@
     overflow: hidden;
     position: absolute;
     top: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
     transform: translate(-40px, 0);
     white-space: pre-line;
     word-break: break-word;

@@ -11,6 +11,7 @@ export default {
       serverConnectionFailed: 'Conexión con el servidor fallida',
       unknownError: 'Error desconocido, intenta más tarde',
       usernameAlreadyInUse: 'El nombre de usuario ya está en uso',
+      logIn: 'Inicio de sesión',
     },
 
     action: {

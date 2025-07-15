@@ -13,9 +13,8 @@ import { Grid, Icon } from 'semantic-ui-react';
 import selectors from '../../../selectors';
 import { isUserAdminOrProjectOwner } from '../../../utils/record-helpers';
 import ProjectCard from '../../projects/ProjectCard';
-import PlusIcon from '../../../assets/images/plus-icon.svg?react';
-
 import styles from './Projects.module.scss';
+import { useTheme } from '../../../contexts';
 
 const Projects = React.memo(({ ids, title, titleIcon, withTypeIndicator, onAdd }) => {
   const canAdd = useSelector((state) => {
@@ -24,6 +23,9 @@ const Projects = React.memo(({ ids, title, titleIcon, withTypeIndicator, onAdd }
   });
 
   const [t] = useTranslation();
+
+  const { theme } = useTheme();
+  const menuItemStyle = { color: theme === 'dark' ? '#fff' : '#22252a' };
 
   return (
     <div className={classNames(styles.wrapper, !title && styles.wrapperWithoutTitle)}>
@@ -56,8 +58,13 @@ const Projects = React.memo(({ ids, title, titleIcon, withTypeIndicator, onAdd }
             >
               <div className={styles.addButtonCover} />
               <div className={styles.addButtonTitleWrapper}>
-                <div className={styles.addButtonTitle}>
-                  <PlusIcon className={styles.addButtonTitleIcon} />
+                <div className={styles.addButtonTitle} style={menuItemStyle}>
+                  <Icon
+                    name="plus circle"
+                    className={styles.addButtonTitleIcon}
+                    style={menuItemStyle}
+                    size="big"
+                  />
                   {t('action.createProject')}
                 </div>
               </div>
