@@ -85,7 +85,6 @@
     "@gravity-ui/markdown-editor": "^15.14.1",
     "@gravity-ui/uikit": "^7.16.2",
     "@juggle/resize-observer": "^3.4.0",
-    "@rollup/rollup-darwin-arm64": "^4.45.1",
     "@vitejs/plugin-react": "^4.6.0",
     "browserslist-to-esbuild": "^2.1.1",
     "classnames": "^2.5.1",

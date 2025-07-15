@@ -236,7 +236,7 @@ const Content = React.memo(() => {
             }}
           >
 
-             <img src={LOGO} alt="Logo" style={{display: 'flex', maxWidth:200, justifySelf:'center'}}  />
+             <img src={LOGO} alt="Logo" style={{display: 'flex', maxWidth:200, margin: "0 auto"}}  />
 
             <Header
               as="h2"
